@@ -25,3 +25,4 @@ elif b == 3 and c == 3:
 else:
     print("Не ломайте правила гри!")
 
+#Чем гуще лес if else if else
