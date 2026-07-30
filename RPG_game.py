@@ -62,7 +62,7 @@ if __name__ == "__main__":
     print("--- ДОБРО ПОЖАЛОВАТЬ В ООП-RPG --- \n")
     
     # 1. Создаем персонажей
-    player = Mage("Гэндальф")  # Можешь заменить на Warrior("Конан")
+    player = Mage("Гэндальф")  
     boss = Monster("Дракон Смауг")
     
     print(f"БИТВА НАЧАЛАСЬ! {player.char_name} ({player.get_health()} HP) против {boss.char_name} ({boss.get_health()} HP) \n")
