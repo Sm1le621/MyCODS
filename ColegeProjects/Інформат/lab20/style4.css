@@ -1,0 +1,20 @@
+body {
+    background-color: aqua;
+}
+
+.d1 {
+    background-color: rgb(249, 201, 16);
+    color: black;
+}
+
+.d2 {
+    background-color: white;
+    color: maroon;
+}
+
+.d3 {
+    background-color: #ebd3d7;
+    color: red;
+    margin: 30px;
+    border: 2px dashed black;
+}
