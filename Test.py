@@ -1,13 +1,17 @@
-import os
-from random import randint
-import time
+import psycopg
 
-def prog_start(game_url:str):
-    while True:
-        time.sleep(1)
-        random_int = randint(0, 100)
-        print(f"Faking random namber is: {random_int}")
-        if random_int == 67 :
-            return os.startfile(game_url)
-
-prog_start("steam://rungameid/632360")
+def connect_to_database():
+    try:
+        # Establish a connection to the PostgreSQL database
+        connection = psycopg.connect(
+            dbname="some-postgres",
+            user="postgres",
+            password="6210",
+            host="localhost",
+            port="5432"
+        )
+        print("Connection to the database was successful.")
+        return connection
+    except Exception as e:
+        print(f"An error occurred while connecting to the database: {e}")
+        return None
