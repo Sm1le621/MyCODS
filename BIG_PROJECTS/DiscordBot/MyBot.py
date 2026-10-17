@@ -22,4 +22,4 @@ async def role_give(member):
     await chanel.send(embed=embed)
     
 
-bot.run("YOUR_SECRET_HERE")
+bot.run("YOUR_DISCORD_TOKEN_HERE")
